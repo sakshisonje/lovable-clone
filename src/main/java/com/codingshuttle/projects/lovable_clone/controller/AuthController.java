@@ -9,6 +9,7 @@ Returning HTTP response*/
 package com.codingshuttle.projects.lovable_clone.controller;
 
 import com.codingshuttle.projects.lovable_clone.dto.auth.AuthResponse;
+import com.codingshuttle.projects.lovable_clone.dto.auth.LoginRequest;
 import com.codingshuttle.projects.lovable_clone.dto.auth.SignupRequest;
 import com.codingshuttle.projects.lovable_clone.service.AuthService;
 import lombok.RequiredArgsConstructor;
@@ -28,6 +29,9 @@ public class AuthController {
     public ResponseEntity<AuthResponse> signup(SignupRequest request){
         return ResponseEntity.ok(authService.signup(request));
     }
-
+    @PostMapping("/login")
+    public ResponseEntity<AuthResponse> login(LoginRequest request){
+        return ResponseEntity.ok(authService.login());
+    }
 
 }
