@@ -12,4 +12,6 @@ public interface ProjectService {
     ProjectResponse getUserProjectById(Long id, Long userId);
 
     ProjectResponse createProject(ProjectRequest request, Long userId);
+
+    ProjectResponse updateProject(Long id, ProjectRequest request, Long userId);
 }
