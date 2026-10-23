@@ -22,9 +22,9 @@ public class Plan {
     Boolean unlimitedAi; //unlimited access to LLM ignore maxTokenPerDay if its true
 
     Boolean active;
-
-    Instant createdAt;
-    Instant updatedAt;
+//
+//    Instant createdAt;
+//    Instant updatedAt;
 }
 
 
