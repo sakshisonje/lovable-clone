@@ -41,7 +41,6 @@ public class BillingController {
         Long userId = 1L; // Replace with actual user ID retrieval logic
         return ResponseEntity.ok(subscriptionService.createCheckoutSessionUrl(userId, checkoutRequest));
     }
-
     @PostMapping("api/stripe/portal")
     public ResponseEntity<PortalResponse> openCustomerPortal() {
         // Implement the logic to create a Stripe customer portal session
